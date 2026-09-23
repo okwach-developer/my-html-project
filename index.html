@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin Mukabi | Web Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Martin Mukabi - Computer Technology Student & Web Developer specializing in modern, interactive web applications.">
+
+    <!-- Google Fonts for crisp modern typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Traditional Custom CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ====================================================================
+         AMBIENT GLOW ACCENTS (Decorative luminous green lighting)
+         ==================================================================== -->
+    <div class="ambient-glow-wrapper" aria-hidden="true">
+        <div class="glow-orb-top-left"></div>
+        <div class="glow-orb-mid-right"></div>
+        <div class="glow-orb-bottom-left"></div>
+        <div class="bg-dot-mesh"></div>
+    </div>
+
+    <!-- ====================================================================
+         HEADER: Sticky navigation bar, brand logo, and call-to-action
+         ==================================================================== -->
+    <header class="navbar-header">
+        <div class="container navbar-container">
+            <!-- Brand Logo -->
+            <a href="#" class="navbar-brand">
+                <div class="brand-badge">&lt;MM/&gt;</div>
+                <div class="brand-info">
+                    <span class="brand-name">Martin Mukabi</span>
+                    <span class="brand-title">Web Developer</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="desktop-nav">
+                <a href="#about" class="nav-item-link">About</a>
+                <a href="#skills" class="nav-item-link">Skills</a>
+                <a href="#projects" class="nav-item-link">Projects</a>
+                <a href="#links" class="nav-item-link">Quick Links</a>
+                <a href="#contact" class="nav-item-link">Contact</a>
+            </nav>
+
+            <!-- Luminous Action Button & Mobile Toggle -->
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+                <a href="#contact" class="btn-luminous navbar-cta" style="padding: 0.6rem 1.25rem; font-size: 0.85rem;">
+                    <span>Hire Me</span>
+                    <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                    </svg>
+                </a>
+                
+                <button id="mobile-menu-btn" class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+                    <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Navigation -->
+        <div id="mobile-menu" class="mobile-menu-drawer">
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#skills" class="mobile-nav-link">Skills</a>
+            <a href="#projects" class="mobile-nav-link">Projects</a>
+            <a href="#links" class="mobile-nav-link">Quick Links</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+            <a href="#contact" class="btn-luminous" style="width: 100%; margin-top: 0.5rem; text-align: center;">Get in Touch</a>
+        </div>
+    </header>
+
+    <!-- ====================================================================
+         MAIN: Primary content of the portfolio
+         ==================================================================== -->
+    <main class="container main-content">
+
+        <!-- ----------------------------------------------------------------
+             HERO SECTION
+             ---------------------------------------------------------------- -->
+        <section class="hero-section">
+            <!-- Pulsing Availability Badge -->
+            <div class="status-badge">
+                <span class="pulse-dot-wrapper">
+                    <span class="pulse-dot-ping"></span>
+                    <span class="pulse-dot-core"></span>
+                </span>
+                <span>Available for new projects & collaborations</span>
+            </div>
+
+            <!-- Main Heading with Luminous Gradient Accent -->
+            <h1 class="hero-heading">
+                Hi, I'm <span class="hero-highlight">Martin Mukabi</span>
+                <span class="hero-subheading">Web Developer & Technologist</span>
+            </h1>
+
+            <!-- Bio Description -->
+            <p class="hero-paragraph">
+                Passionate computer technology student building responsive, fast, and accessible digital experiences with modern web technologies.
+            </p>
+
+            <!-- Luminous Action Buttons -->
+            <div class="hero-cta-group">
+                <a href="#projects" class="btn-luminous">
+                    <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                    </svg>
+                    <span>View Projects</span>
+                </a>
+                <a href="#contact" class="btn-secondary">
+                    <svg width="18" height="18" style="color: var(--color-luminous);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                    <span>Contact Me</span>
+                </a>
+            </div>
+
+            <!-- Stats & Highlights Grid -->
+            <div class="hero-stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value">100%</div>
+                    <div class="stat-label">Dedication</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value text-white">CompTech</div>
+                    <div class="stat-label">Student</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">Modern</div>
+                    <div class="stat-label">Web Stack</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value text-white">Clean</div>
+                    <div class="stat-label">Architecture</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ----------------------------------------------------------------
+             SECTION: ABOUT ME
+             ---------------------------------------------------------------- -->
+        <section id="about" style="scroll-margin-top: 6rem;">
+            <div class="section-tag">
+                <span class="section-tag-line"></span>
+                <span>Get to know me</span>
+            </div>
+            <h2 class="section-title">About Me</h2>
+
+            <div class="about-grid">
+                <!-- Bio Card -->
+                <div class="about-bio-card">
+                    <div>
+                        <p class="about-lead-text">
+                            Hello! I'm <span class="highlight">Martin Mukabi</span>, a passionate computer technology student with a strong interest in web development and programming.
+                        </p>
+                        <p class="about-secondary-text">
+                            I am dedicated to crafting intuitive, performant websites and web applications. My curiosity drives me to constantly explore modern technologies, write clean and maintainable code, and solve real-world problems through creative software solutions.
+                        </p>
+                    </div>
+
+                    <div class="about-focus-grid">
+                        <div class="focus-item">
+                            <div class="focus-icon-box">
+                                <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="focus-label">Academic Focus</div>
+                                <div class="focus-value">Computer Technology</div>
+                            </div>
+                        </div>
+                        <div class="focus-item">
+                            <div class="focus-icon-box">
+                                <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="focus-label">Specialization</div>
+                                <div class="focus-value">Frontend & Web Systems</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Code Terminal Showcase Window -->
+                <div class="code-terminal-card">
+                    <div class="terminal-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span>martin.config.json</span>
+                    </div>
+                    <pre class="code-terminal-content"><code>{
+  <span class="json-key">"developer"</span>: <span class="json-string">"Martin Mukabi"</span>,
+  <span class="json-key">"role"</span>: <span class="json-string">"Web Developer"</span>,
+  <span class="json-key">"status"</span>: <span class="json-key">"Building & Learning"</span>,
+  <span class="json-key">"passions"</span>: [
+    <span class="json-string">"Clean Code"</span>,
+    <span class="json-string">"Responsive UI"</span>,
+    <span class="json-string">"Modern Tech"</span>
+  ],
+  <span class="json-key">"readyToWork"</span>: <span class="json-boolean">true</span>
+}</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- ----------------------------------------------------------------
+             SECTION: MY SKILLS
+             ---------------------------------------------------------------- -->
+        <section id="skills" style="scroll-margin-top: 6rem;">
+            <div class="section-tag">
+                <span class="section-tag-line"></span>
+                <span>Toolbox & Languages</span>
+            </div>
+            <h2 class="section-title">My Skills</h2>
+            <p class="section-subtitle">
+                Core technologies and development tools I use to build robust, modern, and engaging web solutions.
+            </p>
+
+            <div class="skills-grid">
+                <!-- Skill 1: HTML & CSS -->
+                <div class="skill-card">
+                    <div>
+                        <div class="skill-icon-box html">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">HTML & CSS</h3>
+                        <p class="skill-description">
+                            Semantic HTML5 structure, modern CSS layouts (Flexbox, CSS Grid), responsive design, and CSS variables.
+                        </p>
+                    </div>
+                    <div class="skill-meta">
+                        <span>Foundation</span>
+                        <span class="skill-level">Advanced</span>
+                    </div>
+                </div>
+
+                <!-- Skill 2: JavaScript -->
+                <div class="skill-card">
+                    <div>
+                        <div class="skill-icon-box js">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">JavaScript</h3>
+                        <p class="skill-description">
+                            Modern ES6+ features, DOM manipulation, asynchronous operations, event handling, and interactive user flows.
+                        </p>
+                    </div>
+                    <div class="skill-meta">
+                        <span>Logic & Interaction</span>
+                        <span class="skill-level">Intermediate</span>
+                    </div>
+                </div>
+
+                <!-- Skill 3: Python -->
+                <div class="skill-card">
+                    <div>
+                        <div class="skill-icon-box python">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">Python</h3>
+                        <p class="skill-description">
+                            Scripting, algorithmic thinking, data structures, automation workflows, and backend programming fundamentals.
+                        </p>
+                    </div>
+                    <div class="skill-meta">
+                        <span>Backend & Scripting</span>
+                        <span class="skill-level">Proficient</span>
+                    </div>
+                </div>
+
+                <!-- Skill 4: VS Code & Tools -->
+                <div class="skill-card">
+                    <div>
+                        <div class="skill-icon-box tools">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="skill-title">VS Code & Dev Tools</h3>
+                        <p class="skill-description">
+                            Git version control, command line interface, debugging tools, extensions, and modern IDE workflows.
+                        </p>
+                    </div>
+                    <div class="skill-meta">
+                        <span>Workflow</span>
+                        <span class="skill-level">Daily Driver</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ----------------------------------------------------------------
+             SECTION: MY PROJECTS
+             ---------------------------------------------------------------- -->
+        <section id="projects" style="scroll-margin-top: 6rem;">
+            <div class="section-tag">
+                <span class="section-tag-line"></span>
+                <span>Featured Portfolio</span>
+            </div>
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">
+                A showcase of independent web projects demonstrating responsive design, clean code, and interactive user experiences.
+            </p>
+
+            <div class="projects-grid">
+                <!-- Project 1: Portfolio Website -->
+                <article class="project-card">
+                    <!-- Window Header Mockup -->
+                    <div class="project-mockup-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="project-url">portfolio-website.app</span>
+                        <span style="width: 20px;"></span>
+                    </div>
+
+                    <!-- Visual Mockup Area -->
+                    <div class="project-preview-area">
+                        <div class="mockup-inner-box">
+                            <div class="mockup-header-row">
+                                <div class="mockup-avatar">MM</div>
+                                <div class="mockup-skeleton-title"></div>
+                            </div>
+                            <div class="mockup-skeleton-lines">
+                                <div class="skeleton-line full"></div>
+                                <div class="skeleton-line half"></div>
+                                <div class="mockup-skeleton-pill"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Content -->
+                    <div class="project-body">
+                        <div>
+                            <div class="project-tags">
+                                <span class="tag-badge luminous">HTML5</span>
+                                <span class="tag-badge">CSS3</span>
+                                <span class="tag-badge">Responsive</span>
+                                <span class="tag-badge">Dark Theme</span>
+                            </div>
+                            <h3 class="project-title">Project 1: Portfolio Website</h3>
+                            <p class="project-desc">
+                                This is my responsive portfolio website built with HTML and CSS, featuring a clean visual hierarchy, modern dark aesthetic, and luminous green accents.
+                            </p>
+                        </div>
+
+                        <!-- Luminous Button & Source Code Link -->
+                        <div class="project-footer">
+                            <a href="#about" class="btn-luminous" style="flex: 1;">
+                                <span>View Project</span>
+                                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                </svg>
+                            </a>
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-icon-btn" title="View Source on GitHub">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: To-Do List App -->
+                <article class="project-card">
+                    <!-- Window Header Mockup -->
+                    <div class="project-mockup-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="project-url">taskflow-app.dev</span>
+                        <span style="width: 20px;"></span>
+                    </div>
+
+                    <!-- Visual Mockup Area -->
+                    <div class="project-preview-area">
+                        <div class="mockup-inner-box">
+                            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-dark); padding-bottom: 0.5rem; margin-bottom: 0.5rem;">
+                                <span style="font-size: 0.725rem; font-family: var(--font-mono); color: var(--text-dim);">My Tasks (3)</span>
+                                <span style="font-size: 0.725rem; color: var(--color-luminous); font-weight: 700;">Done: 2/3</span>
+                            </div>
+                            <div class="todo-mockup-row">
+                                <span class="todo-check">✓</span>
+                                <span class="todo-text-completed">Draft wireframes</span>
+                            </div>
+                            <div class="todo-mockup-row">
+                                <span class="todo-check">✓</span>
+                                <span class="todo-text-completed">Build with Traditional CSS</span>
+                            </div>
+                            <div class="todo-mockup-row" style="background: var(--color-luminous-subtle); border-color: var(--color-luminous-border);">
+                                <span style="width: 14px; height: 14px; border: 1px solid var(--color-luminous); border-radius: 3px;"></span>
+                                <span style="color: var(--text-main); font-weight: 600;">Deploy to GitHub Pages</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Content -->
+                    <div class="project-body">
+                        <div>
+                            <div class="project-tags">
+                                <span class="tag-badge yellow">JavaScript</span>
+                                <span class="tag-badge luminous">DOM API</span>
+                                <span class="tag-badge">HTML5</span>
+                                <span class="tag-badge">LocalStorage</span>
+                            </div>
+                            <h3 class="project-title">Project 2: To-Do List App</h3>
+                            <p class="project-desc">
+                                An interactive task manager application using JavaScript. Features interactive task creation, status filtering, completed item toggling, and browser local storage.
+                            </p>
+                        </div>
+
+                        <!-- Luminous Button & Source Code Link -->
+                        <div class="project-footer">
+                            <a href="#about" class="btn-luminous" style="flex: 1;">
+                                <span>View Project</span>
+                                <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                </svg>
+                            </a>
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-icon-btn" title="View Source on GitHub">
+                                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ----------------------------------------------------------------
+             ASIDE: QUICK LINKS & SOCIAL HUBS
+             ---------------------------------------------------------------- -->
+        <aside id="links" class="links-card-wrapper" style="scroll-margin-top: 6rem;">
+            <div class="section-tag">
+                <span class="section-tag-line"></span>
+                <span>Connect & Follow</span>
+            </div>
+            <h2 class="section-title">Quick Links</h2>
+            <p class="section-subtitle">
+                Find my code repositories, career background, and development journey across the web.
+            </p>
+
+            <div class="quick-links-grid">
+                <!-- GitHub -->
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="quick-link-box">
+                    <div class="quick-link-content">
+                        <div class="quick-link-icon">
+                            <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="quick-link-name">GitHub</div>
+                            <div class="quick-link-sub">Explore Repositories</div>
+                        </div>
+                    </div>
+                    <span class="quick-link-arrow">↗</span>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="quick-link-box">
+                    <div class="quick-link-content">
+                        <div class="quick-link-icon">
+                            <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="quick-link-name">LinkedIn</div>
+                            <div class="quick-link-sub">Professional Network</div>
+                        </div>
+                    </div>
+                    <span class="quick-link-arrow">↗</span>
+                </a>
+
+                <!-- Twitter / X -->
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="quick-link-box">
+                    <div class="quick-link-content">
+                        <div class="quick-link-icon">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="quick-link-name">Twitter / X</div>
+                            <div class="quick-link-sub">Tech & Updates</div>
+                        </div>
+                    </div>
+                    <span class="quick-link-arrow">↗</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- ----------------------------------------------------------------
+             SECTION: CONTACT ME
+             ---------------------------------------------------------------- -->
+        <section id="contact" style="scroll-margin-top: 6rem;">
+            <div class="section-tag">
+                <span class="section-tag-line"></span>
+                <span>Get In Touch</span>
+            </div>
+            <h2 class="section-title">Contact Me</h2>
+            <p class="section-subtitle">
+                Have an inquiry, project proposal, or collaboration in mind? Send me a message and I'll get back to you promptly.
+            </p>
+
+            <div class="contact-grid">
+                <!-- Contact Information Details -->
+                <div class="contact-info-list">
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">
+                            <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="contact-info-label">Direct Email</div>
+                            <div class="contact-info-value">martinokwach@gmail.com</div>
+                            <div class="contact-info-sub">Feel free to email me anytime</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon">
+                            <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="contact-info-label">Location</div>
+                            <div class="contact-info-value">Available Globally (Remote)</div>
+                            <div class="contact-info-sub">Open for remote opportunities</div>
+                        </div>
+                    </div>
+
+                    <div class="response-badge-card">
+                        <div class="response-badge-header">
+                            <span class="pulse-dot-core" style="width: 8px; height: 8px;"></span>
+                            <span>Quick Response Guaranteed</span>
+                        </div>
+                        <p class="response-badge-text">
+                            I usually reply to all emails within 24 hours. Looking forward to discussing how we can work together!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Contact Form Card -->
+                <div class="contact-form-card">
+                    <form id="contact-form" action="#" method="post" class="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" id="name" name="name" class="form-input" required placeholder="Enter your full name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-input" required placeholder="Enter your email address">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea id="message" name="message" class="form-textarea" required placeholder="Write your message here..."></textarea>
+                        </div>
+
+                        <!-- Luminous Green Submit Button -->
+                        <button type="submit" class="btn-luminous btn-form-submit">
+                            <span>Send Message</span>
+                            <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                            </svg>
+                        </button>
+                    </form>
+
+                    <!-- Client Feedback Notification -->
+                    <div id="form-success" class="form-success-banner">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <span>Thank you! Your message has been sent successfully. I'll get back to you soon.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ====================================================================
+         FOOTER: Bottom copyright section
+         ==================================================================== -->
+    <footer class="page-footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <div class="footer-badge">MM</div>
+                <div class="footer-copyright">
+                    &copy; 2026 Martin Mukabi. All rights reserved.
+                </div>
+            </div>
+
+            <div class="built-with-tag">
+                <span>Built with</span>
+                <span class="tag-highlight">Semantic HTML</span>
+                <span>&</span>
+                <span class="tag-highlight">Traditional CSS</span>
+            </div>
+
+            <a href="#" class="back-to-top-btn" aria-label="Scroll back to top">
+                <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+    <!-- ====================================================================
+         LIGHTWEIGHT INTERACTIVE SCRIPTS
+         ==================================================================== -->
+    <script>
+        // Mobile Navigation Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('is-active');
+            });
+
+            // Close mobile menu when any nav link is tapped
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.remove('is-active');
+                });
+            });
+        }
+
+        // Contact Form Interactive Submission
+        const contactForm = document.getElementById('contact-form');
+        const formSuccess = document.getElementById('form-success');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                // Show success banner
+                if (formSuccess) {
+                    formSuccess.classList.add('is-visible');
+                }
+
+                // Reset form inputs
+                contactForm.reset();
+
+                // Auto-hide success message after 6 seconds
+                setTimeout(() => {
+                    if (formSuccess) {
+                        formSuccess.classList.remove('is-visible');
+                    }
+                }, 6000);
+            });
+        }
+    </script>
+</body>
+</html>
